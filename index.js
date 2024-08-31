@@ -26,7 +26,7 @@ app.post("/submit", async (req, res) => {
       {
         name: Name,
         email: Email,
-        VerificationCode: VerificationCode,
+        verificationCode: VerificationCode,
       }
     );
 
