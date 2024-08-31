@@ -6,6 +6,11 @@ const PORT = process.env.PORT || 80;
 
 app.use(express.json());
 
+// Open Route
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Bem vindo a api" });
+});
+
 app.post("/submit", async (req, res) => {
   const { Name, Email, VerificationCode } = req.body;
 
